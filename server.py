@@ -13,9 +13,8 @@ import os
 app = FastAPI()
 
 # ---- CONFIG ----
-# If you run Ollama on the Mac, its default is usually:
 OLLAMA_URL = os.environ.get("OLLAMA_URL", "http://127.0.0.1:11434")
-OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "llama3.1:8b")  # change if needed
+OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "llama3.1:8b") 
 
 WHISPER_MODEL = os.environ.get("WHISPER_MODEL", "small")  # tiny, base, small, medium, large-v3
 WHISPER_DEVICE = os.environ.get("WHISPER_DEVICE", "auto")  # "auto" usually picks best on Mac
